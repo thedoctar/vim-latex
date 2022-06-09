@@ -2531,6 +2531,29 @@ and some more text
       settings</link>.
     </para>
    </section>
+   <section id="Tex_FoldBeamerExtra">
+    <title>Tex_FoldBeamerExtra</title>
+    <para>
+     This option enables folding for syntax present in beamer code. In beamer,
+     it's possible to use the syntax
+     <programlisting>\frame{...}</programlisting>
+     to define a frame. Enabling this option will fold lines from one \frame
+     to the line before the next \frame.
+    </para>
+    <para>
+     This option will also fold \column in the same manner, for the syntax
+     <programlisting>
+      \begin{columns}[c]
+        \column{.33\textwidth}
+        Text...
+        \column{.33\textwidth}
+        Text...
+        \column{.33\textwidth}
+        Text...
+      \end{columns}
+     </programlisting>
+    </para>
+   </section>
    <section id="fold-setting-advanced">
     <title>Advanced Fold setting details</title>
     <para>
